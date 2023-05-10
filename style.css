@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 body {
   animation: fadeInAnimation ease 3s;
@@ -23,30 +24,34 @@ body[style^="background-image: url"] {
   background-position: center;
   min-height: 300px;
   max-height: 100vh;
+  align-items: center;
 }
 
 .dashboardContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  width: 100vw;
-  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.712);
+  border-radius: 5%;
+  width: 60vw;
+  height: 60vh;
+  margin: 12%;
   transition: all 0.3s ease;
+  
 }
 .weatherContainer {
   grid-column: 3;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 
   background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 16px;
+  border-bottom-left-radius: 1rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.3px);
   -webkit-backdrop-filter: blur(6.3px);
-  border: 1px solid rgba(255, 255, 255, 0.99);
+  border: 2px solid rgba(0, 0, 0, 0.99);
 
   width: 25rem;
   height: 15rem;
@@ -108,8 +113,8 @@ span.date {
   backdrop-filter: blur(15.3px);
   -webkit-backdrop-filter: blur(6.3px);
 
-  border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.99);
+  border-top-right-radius: 1rem;
+border: 2px solid rgba(0, 0, 0, 0.99);
 
   place-self: center;
 }
@@ -129,8 +134,8 @@ span.date {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15.3px);
   -webkit-backdrop-filter: blur(15.3px);
-  border: 1px solid rgba(255, 255, 255, 0.99);
-  border-radius: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.99);
+  border-end-end-radius: 1rem;
   place-self: center;
   display: flex;
   flex-direction: column;
@@ -167,8 +172,8 @@ span.date {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15.3px);
   -webkit-backdrop-filter: blur(15.3px);
-  border: 1px solid rgba(255, 255, 255, 0.99);
-  border-radius: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.99);
+  border-top-left-radius: 1rem;
 
   width: 25rem;
   height: 15rem;
